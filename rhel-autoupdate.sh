@@ -16,7 +16,7 @@ sed -i 's/^apply_updates = no/apply_updates = yes/' "$config_file"
 sed -i 's/^reboot = never/reboot = when-needed/' "$config_file"
 systemctl enable --now dnf-automatic.timer
 
-dnf update
+dnf update -y
 dnf -y install podman podman-docker podman-tui
 
 # enable podman auto update timer
