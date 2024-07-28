@@ -14,7 +14,7 @@ dnf kpatch auto
 sed -i 's/^upgrade_type = default/upgrade_type = security/' "$config_file"
 sed -i 's/^apply_updates = no/apply_updates = yes/' "$config_file"
 sed -i 's/^reboot = never/reboot = when-needed/' "$config_file"
-systemctl enable --now dnf-automatic.timer
+systemctl enable --now dnf-automatic.timer
 
 dnf update
 dnf -y install podman podman-docker podman-tui
