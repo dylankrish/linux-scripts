@@ -11,8 +11,6 @@ dnf install htop vim -y
 dnf install dnf-automatic kpatch kpatch-dnf -y
 dnf kpatch auto
 vim /etc/dnf/automatic.conf
-
-# enable package auto update timer
 systemctl enable --now dnf-automatic.timer
 
 dnf update
