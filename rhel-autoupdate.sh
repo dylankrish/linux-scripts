@@ -19,7 +19,8 @@ systemctl enable --now dnf-automatic.timer
 dnf update -y
 dnf -y install podman podman-docker podman-tui
 
-# enable podman auto update timer
+# enable podman services
+systemctl enable --now podman.socket
 systemctl enable --now podman-auto-update.timer
 
 echo "Done"
