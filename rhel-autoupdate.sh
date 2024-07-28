@@ -10,7 +10,10 @@ dnf install htop vim -y
 # enable auto update
 dnf install dnf-automatic kpatch kpatch-dnf -y
 dnf kpatch auto
-vim /etc/dnf/automatic.conf
+# change upgrade type to security, apply_updates to yes, reboot to when-needed
+sed -i 's/^upgrade_type = default/upgrade_type = security/' "$config_file"
+sed -i 's/^apply_updates = no/apply_updates = yes/' "$config_file"
+sed -i 's/^reboot = never/reboot = when-needed/' "$config_file"
 systemctl enable --now dnf-automatic.timer
 
 dnf update
