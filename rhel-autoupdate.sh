@@ -1,6 +1,23 @@
-#!/bin/bash
+#!/usr/bin/sudo /bin/bash
 
-sudo dnf install dnf-automatic kpatch-dnf -y
+# add packages
+dnf install htop vim -y
 
-sudo dnf config-manager --set-enabled crb
-sudo dnf install epel-release -y
+# enable auto update
+dnf install dnf-automatic kpatch-dnf -y
+vim /etc/dnf/automatic.conf
+
+# enable package auto update timer
+systemctl enable --now dnf-automatic.timer
+
+# install epel
+dnf config-manager --set-enabled crb
+dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm
+
+dnf update
+dnf -y install podman podman-docker podman-tui
+
+# enable podman auto update timer
+systemctl enable --now podman-auto-update.timer
+
+echo "Done"
