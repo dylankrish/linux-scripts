@@ -2,7 +2,7 @@
 
 # install epel
 dnf config-manager --set-enabled crb
-dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm
+dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm -y
 
 # add packages
 dnf install htop vim -y
