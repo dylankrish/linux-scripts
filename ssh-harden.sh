@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# remove currently authorized keys
+# comment to disable
+rm ~/.ssh/authorized_keys
+
 # github username
 username = dylankrish
 
