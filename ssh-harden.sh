@@ -5,7 +5,7 @@
 rm ~/.ssh/authorized_keys
 
 # github username
-username = dylankrish
+username=dylankrish
 
 # get user ssh keys
 curl https://github.com/$username.keys | tee -a ~/.ssh/authorized_keys
