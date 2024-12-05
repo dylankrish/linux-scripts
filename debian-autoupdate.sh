@@ -3,3 +3,5 @@
 apt-get install unattended-upgrades apt-listchanges -y
 
 # not finished yet
+
+echo "script not finished"
