@@ -1,5 +1,10 @@
 # Linux Scripts
 
+## Clone all scripts
+```
+git clone https://github.com/dylankrish/linux-scripts.git
+```
+
 ## Harden SSH
 ```
 curl -sSL https://raw.githubusercontent.com/dylankrish/linux-scripts/refs/heads/main/ssh-harden.sh | bash
