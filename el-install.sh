@@ -5,7 +5,7 @@ dnf config-manager --set-enabled crb
 dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm -y
 
 # add packages
-dnf install htop vim -y
+dnf install htop vim git -y
 
 dnf update -y
 dnf -y install podman podman-docker podman-tui
