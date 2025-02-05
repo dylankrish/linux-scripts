@@ -8,7 +8,9 @@ rm ~/.ssh/authorized_keys
 username=dylankrish
 
 # make .ssh if not created
-mkdir ~/.ssh
+if [ ! -d "~/.ssh" ]; then
+    mkdir ~/.ssh
+fi
 
 # get user ssh keys
 curl https://github.com/$username.keys | tee -a ~/.ssh/authorized_keys
