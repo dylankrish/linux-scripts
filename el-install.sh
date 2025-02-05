@@ -1,4 +1,6 @@
-#!/usr/bin/sudo /bin/bash
+#!/bin/bash
+
+# run as root
 
 # install epel
 dnf config-manager --set-enabled crb

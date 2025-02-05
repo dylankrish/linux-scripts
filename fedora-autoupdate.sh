@@ -1,4 +1,6 @@
-#!/usr/bin/sudo /bin/bash
+#!/bin/bash
+
+# run as root
 
 # enable auto update
 dnf update -y
