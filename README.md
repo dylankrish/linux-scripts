@@ -22,5 +22,17 @@ curl -sSL https://raw.githubusercontent.com/dylankrish/linux-scripts/refs/heads/
 
 ## [RHEL] Install Packages on Enterprise Linux
 ```
-curl -sSL https://raw.githubusercontent.com/dylankrish/linux-scripts/refs/heads/main/el-install.sh | sudo bash
+# install epel
+sudo dnf config-manager --set-enabled crb
+sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm -y
+
+# add packages
+sudo dnf install htop vim git -y
+
+sudo dnf update -y
+sudo dnf -y install podman podman-docker podman-tui
+
+# enable podman services
+sudo systemctl enable --now podman.socket
+sudo systemctl enable --now podman-auto-update.timer
 ```
