@@ -1,27 +1,27 @@
 # Linux Scripts
 
 ## Clone all scripts
-```
+```bash
 git clone https://github.com/dylankrish/linux-scripts.git
 ```
 
 ## Harden SSH
-```
+```bash
 curl -sSL https://raw.githubusercontent.com/dylankrish/linux-scripts/refs/heads/main/ssh-harden.sh | bash
 ```
 
 ## [Fedora] Set up Auto Updates
-```
+```bash
 curl -sSL https://raw.githubusercontent.com/dylankrish/linux-scripts/refs/heads/main/fedora-autoupdate.sh | sudo bash
 ```
 
 ## [RHEL] Set up Auto Updates + Kernel Patching
-```
+```bash
 curl -sSL https://raw.githubusercontent.com/dylankrish/linux-scripts/refs/heads/main/el-autoupdate.sh | sudo bash
 ```
 
 ## [RHEL] Install Packages on Enterprise Linux
-```
+```bash
 # install epel
 sudo dnf config-manager --set-enabled crb
 sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm -y
