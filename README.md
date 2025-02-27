@@ -35,4 +35,7 @@ sudo dnf -y install podman podman-docker podman-tui
 # enable podman services
 sudo systemctl enable --now podman.socket
 sudo systemctl enable --now podman-auto-update.timer
+
+# install cockpit
+sudo dnf install cockpit cockpit-packagekit cockpit-pcp cockpit-podman cockpit-storaged -y
 ```
