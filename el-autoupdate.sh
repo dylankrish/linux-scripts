@@ -6,6 +6,9 @@ if [[ $EUID -ne 0 ]]; then
    exit 1
 fi
 
+set -e # exit script if error
+set -x # show executed commands
+
 # enable auto update and live patching
 dnf update -y
 dnf install dnf-automatic kpatch kpatch-dnf -y
