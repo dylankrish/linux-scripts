@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -x # show executed commands
+
 # remove currently authorized keys
 # comment to disable
 rm ~/.ssh/authorized_keys
