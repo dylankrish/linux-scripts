@@ -10,6 +10,11 @@ git clone https://github.com/dylankrish/linux-scripts.git
 curl -sSL https://raw.githubusercontent.com/dylankrish/linux-scripts/refs/heads/main/ssh-harden.sh | bash
 ```
 
+## [Debian/Ubuntu] Set up Auto Updates
+```bash
+curl -sSL https://raw.githubusercontent.com/dylankrish/linux-scripts/refs/heads/main/debian-autoupdate.sh | sudo bash
+```
+
 ## [Fedora] Set up Auto Updates
 ```bash
 curl -sSL https://raw.githubusercontent.com/dylankrish/linux-scripts/refs/heads/main/fedora-autoupdate.sh | sudo bash
