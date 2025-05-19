@@ -35,7 +35,7 @@ sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noa
 sudo dnf install htop vim git -y
 
 sudo dnf update -y
-sudo dnf -y install podman podman-docker podman-tui
+sudo dnf -y install podman podman-docker
 
 # enable podman services
 sudo systemctl enable --now podman.socket
