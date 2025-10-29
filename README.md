@@ -25,12 +25,11 @@ curl -sSL https://raw.githubusercontent.com/dylankrish/linux-scripts/refs/heads/
 curl -sSL https://raw.githubusercontent.com/dylankrish/linux-scripts/refs/heads/main/el-autoupdate.sh | sudo bash
 ```
 
-## [RHEL] Install Packages on Enterprise Linux
-```bash
-# install epel
-sudo dnf config-manager --set-enabled crb
-sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm -y
+## EPEL Extra Packages for Enterprise Linux
+Follow https://docs.fedoraproject.org/en-US/epel/
 
+## Install Packages
+```bash
 # add packages
 sudo dnf install htop vim git -y
 
