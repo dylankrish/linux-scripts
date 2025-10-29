@@ -26,7 +26,7 @@ curl -sSL https://raw.githubusercontent.com/dylankrish/linux-scripts/refs/heads/
 ```
 
 ## EPEL Extra Packages for Enterprise Linux
-Follow https://docs.fedoraproject.org/en-US/epel/
+Follow instructions for CentOS Stream https://docs.fedoraproject.org/en-US/epel/getting-started/
 
 ## Install Packages
 ```bash
