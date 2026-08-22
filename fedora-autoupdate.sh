@@ -11,7 +11,7 @@ set -x # show executed commands
 
 # enable auto update
 dnf update -y
-dnf install dnf-automatic
+dnf install dnf-automatic -y
 
 # change upgrade type to security, apply_updates to yes, reboot to when-needed
 sed -i 's/^upgrade_type = default/upgrade_type = security/' "/etc/dnf/automatic.conf"
