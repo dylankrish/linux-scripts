@@ -5,6 +5,12 @@
 git clone https://github.com/dylankrish/linux-scripts.git
 ```
 
+## Update SSH keys
+Replace <username> with your GitHub username.
+```
+curl https://github.com/<username>.keys | tee -a ~/.ssh/authorized_keys
+```
+
 ## Harden SSH
 ```bash
 curl -sSL https://raw.githubusercontent.com/dylankrish/linux-scripts/refs/heads/main/ssh-harden.sh | bash
